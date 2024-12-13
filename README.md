@@ -16,9 +16,9 @@ C242-PS134 Bangkit Academy 2024 Batch 2 Capstone Team consists of:
   3. Hanikun Sukma Salsabiella – Universitas Islam Sultan Agung  
 
 - **Cloud Computing (CC):**
-  4. Ery Utami – Universitas Diponegoro  
-  5. Asmarani Intan Prawesti – Universitas Diponegoro  
+  1. Ery Utami – Universitas Diponegoro  
+  2. Asmarani Intan Prawesti – Universitas Diponegoro  
 
 - **Mobile Development (MD):**
-  6. Adrian Septiyadi – Universitas Diponegoro  
-  7. Fausta Raihan Maulana – Universitas Diponegoro  
+  1. Adrian Septiyadi – Universitas Diponegoro  
+  2. Fausta Raihan Maulana – Universitas Diponegoro  

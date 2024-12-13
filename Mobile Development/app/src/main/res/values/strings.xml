@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">CashBox</string>
+    <string name="home_title">Beranda</string>
+    <string name="budgeting_title">Budgeting</string>
+    <string name="transaction_title">Transaksi</string>
+    <string name="analysis_title">Analisis</string>
+    <string name="good_morning">Selamat Pagi,</string>
+    <string name="good_afternoon">Selamat Siang,</string>
+    <string name="good_evening">Selamat Sore,</string>
+    <string name="good_night">Selamat Malam,</string>
+    <string name="income">Pemasukan</string>
+    <string name="expense">Pengeluaran</string>
+    <string name="income_category">Kategori Pemasukan</string>
+    <string name="expense_category">Kategori Pengeluaran</string>
+    <string name="cashbox_application_logo">Logo aplikasi Cashbox</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Masuk</string>
+    <string name="do_not_have_account">Belum punya akun?</string>
+    <string name="register_here">Daftar disini</string>
+    <string name="login_with_google">Masuk dengan Google</string>
+    <string name="google_logo">Logo Google</string>
+    <string name="data_can_not_be_empty">Data can\'t be empty</string>
+    <string name="invalid_email_format">Invalid email format</string>
+    <string name="google_sign_in_failed">Google Sign In failed</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="get_token_failed">Getting id token failed</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="register_account">Daftar Akun</string>
+    <string name="name">Nama</string>
+    <string name="confirmation_password">Konfirmasi Password</string>
+    <string name="register">Daftar</string>
+    <string name="back_to_previous_menu">Kembali ke menu sebelumnya</string>
+    <string name="add_transaction_data">Tambah data transaksi</string>
+    <string name="incorrect_confirmation_password">Incorrect confirmation password</string>
+    <string name="add_wallet">Tambah Wallet</string>
+    <string name="amount">Nominal</string>
+    <string name="edit_wallet">Edit Wallet</string>
+    <string name="delete_wallet">Hapus wallet</string>
+    <string name="save_change">Simpan Perubahan</string>
+    <string name="my_wallet">Wallet Saya</string>
+    <string name="total_balance">Total Saldo</string>
+    <string name="list_wallet">Daftar Wallet</string>
+    <string name="user_profile">Profil pengguna</string>
+    <string name="my_account">Akun Saya</string>
+    <string name="logout">Keluar</string>
+    <string name="edit_account">Edit Akun</string>
+    <string name="number">Nomor Telepon</string>
+    <string name="birth_date">Tanggal Lahir</string>
+    <string name="gender">Gender</string>
+    <string name="male_radio_button">Radio button laki-laki</string>
+    <string name="female_radio_button">Radio button perempuan</string>
+    <string name="male">Laki-laki</string>
+    <string name="female">Perempuan</string>
+    <string name="transaction_category">Kategori transaksi</string>
+    <string name="to_target_amount">dari %1$s</string>
+    <string name="target_difference_day">%1$d hari lagi</string>
+    <string name="transaction_not_found">Data transaksi tidak ada</string>
+    <string name="month_income">Pemasukan (%1$s)</string>
+    <string name="month_expense">Pengeluaran (%1$s)</string>
+    <string name="delete_budgeting_confirmation">Anda yakin ingin menghapus kategori budgeting ini?</string>
+    <string name="no">Tidak</string>
+    <string name="yes">Ya</string>
+    <string name="add_budgeting">Tambah Budgeting</string>
+    <string name="category">Kategori</string>
+    <string name="add">Tambah</string>
+    <string name="add_goals">Tambah Goals</string>
+    <string name="estimated_goals_date">Perkiraan Goals Tercapai</string>
+    <string name="add_goals_save">Tambah Tabungan Goals</string>
+    <string name="description">Deskripsi</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="save">Tabung</string>
+    <string name="add_transaction">Tambah Transaksi</string>
+    <string name="money_source">Sumber Uang</string>
+    <string name="date">Tanggal</string>
+    <string name="this_month">Bulan Ini</string>
+    <string name="last_month">Bulan lalu</string>
+    <string name="last_two_month">2 Bulan lalu</string>
+    <string name="category_expense">Pengeluaran per Kategori</string>
+    <string name="budgeting_category_priority">Prioritas Budgeting per Kategori</string>
+    <string name="edit_budgeting">Edit Budgeting</string>
+    <string name="edit_goals">Edit Goals</string>
+    <string name="delete_save_goals">Hapus tabungan goals</string>
+    <string name="edit_save_goals">Edit Tabungan Goals</string>
+    <string name="edit_transaction">Edit Transaksi</string>
+    <string name="update">Perbarui</string>
+    <string name="delete">Hapus</string>
+    <string name="goals">Goals</string>
+    <string name="total_goals_raised">Total Goals Tercapai</string>
+    <string name="goals_list">Daftar Goals</string>
+    <string name="add_new_goals">Tambah Goals Baru</string>
+    <string name="goals_detail">Detail Goals</string>
+    <string name="delete_goals">Hapus goals</string>
+    <string name="percentage">%</string>
+    <string name="achieved">Tercapai</string>
+    <string name="estimated_goals_achieved">Perkiraan Goals Tercapai</string>
+    <string name="rest_amount">Nominal yang Belum Tercapai</string>
+    <string name="add_save">Tambah tabungan</string>
+    <string name="save_history">Riwayat Menabung Menuju Goals</string>
+    <string name="budgeting_list">List Budgeting</string>
+    <string name="auto_budgeting">Auto-Budgeting</string>
+    <string name="total_rest_balance">Total Sisa Saldo</string>
+    <string name="total_income">Total Pemasukan</string>
+    <string name="total_expense">Total Pengeluaran</string>
+    <string name="slash">/</string>
+    <string name="stripes">-</string>
+    <string name="total_wallet_balance">Total Saldo Wallet</string>
+    <string name="your_budgeting_priority">Saran Prioritas Budgeting Buat Kamu</string>
+    <string name="check_your_budgeting">Cek budgeting yang udah disaranin ai buat kamu</string>
+    <string name="last_transaction">Transaksi Terakhir</string>
+    <string name="check_your_transaction">Cek transaksi terakhir kamu, ada pemasukan atau pengeluaran baru?</string>
+    <string name="your_goals">Goals-mu</string>
+    <string name="let_is_save">Ayo nabung buat goals kamu, biar cepat tercapai!</string>
+    <string name="see_detail">Lihat Detail</string>
+
+    <string-array name="income_categories">
+        <item>Gaji</item>
+        <item>Bonus</item>
+        <item>Usaha Sampingan</item>
+        <item>Investasi (Pemasukan)</item>
+        <item>Pemasukan Lain</item>
+    </string-array>
+
+    <string-array name="expense_categories">
+        <item>Makanan &amp; Minuman</item>
+        <item>Transportasi</item>
+        <item>Kesehatan</item>
+        <item>Tagihan &amp; Utilitas</item>
+        <item>Pendidikan</item>
+        <item>Hiburan</item>
+        <item>Belanja</item>
+        <item>Investasi (Pengeluaran)</item>
+        <item>Perawatan Pribadi</item>
+        <item>Donasi</item>
+        <item>Asuransi</item>
+        <item>Kebutuhan Rumah Tangga</item>
+        <item>Pajak</item>
+        <item>Pengeluaran Lain</item>
+    </string-array>
+</resources>

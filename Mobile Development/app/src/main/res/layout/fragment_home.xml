@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/user_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="16dp"
+            android:background="@drawable/bg_top"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_account"
+                android:contentDescription="@string/user_profile"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_profile"
+                tools:text="Selamat Pagi,"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/inter_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/tv_greeting"
+                app:layout_constraintStart_toEndOf="@id/iv_profile"
+                app:layout_constraintEnd_toStartOf="@id/ib_goals"/>
+
+            <ImageButton
+                android:id="@+id/ib_goals"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_circle_white"
+                android:src="@drawable/ic_flag"
+                android:contentDescription="@string/goals"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:contentPadding="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/tv_username">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_total_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/total_wallet_balance"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_total_balance"
+                        tools:text="Rp100.000.000"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_wallet"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_circle_blue"
+                        android:src="@drawable/ic_wallet"
+                        android:contentDescription="@string/my_wallet"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_income"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                app:contentPadding="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cv_expense"
+                app:layout_constraintTop_toBottomOf="@id/cv_balance">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_income"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:padding="8dp"
+                        android:background="@drawable/bg_circle_light_blue"
+                        android:src="@drawable/ic_arrow_downward"
+                        android:contentDescription="@string/income"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_income"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toEndOf="@id/iv_income"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Pemasukan (Nov)"/>
+
+                    <TextView
+                        android:id="@+id/tv_income"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:textColor="@color/green"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@id/iv_income"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_total_income"
+                        tools:text="Rp1.000.000"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_expense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="4dp"
+                app:contentPadding="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/cv_income"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_balance">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_expense"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:padding="8dp"
+                        android:background="@drawable/bg_circle_light_blue"
+                        android:src="@drawable/ic_arrow_upward"
+                        android:contentDescription="@string/expense"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_expense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toEndOf="@id/iv_expense"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Pengeluaran (Nov)"/>
+
+                    <TextView
+                        android:id="@+id/tv_expense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:textColor="@color/red"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@id/iv_expense"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_total_expense"
+                        tools:text="Rp1.000.000"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/iv_budgeting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_budgeting_checked"
+            android:contentDescription="@string/budgeting_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_information"/>
+
+        <TextView
+            android:id="@+id/tv_budgeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/your_budgeting_priority"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/iv_budgeting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_budgeting"
+            app:layout_constraintBottom_toBottomOf="@id/iv_budgeting"/>
+
+        <TextView
+            android:id="@+id/tv_check_your_budgeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/check_your_budgeting"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_budgeting" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_budgeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/tv_check_your_budgeting"/>
+
+        <ImageView
+            android:id="@+id/iv_transaction"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_transaction_checked"
+            android:contentDescription="@string/transaction_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_list_budgeting"/>
+
+        <TextView
+            android:id="@+id/tv_last_transaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/last_transaction"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/iv_transaction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_transaction"
+            app:layout_constraintBottom_toBottomOf="@id/iv_transaction"/>
+
+        <TextView
+            android:id="@+id/tv_check_your_transaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/check_your_transaction"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_transaction" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_last_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/tv_check_your_transaction"/>
+
+        <ImageView
+            android:id="@+id/iv_goals_tracker"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_flag"
+            android:contentDescription="@string/goals"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_last_transaction"/>
+
+        <TextView
+            android:id="@+id/tv_goals_tracker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/your_goals"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/iv_goals_tracker"
+            app:layout_constraintEnd_toStartOf="@id/btn_more_goals"
+            app:layout_constraintTop_toTopOf="@id/iv_goals_tracker"
+            app:layout_constraintBottom_toBottomOf="@id/iv_goals_tracker"/>
+
+        <TextView
+            android:id="@+id/tv_check_your_goals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/let_is_save"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_more_goals"
+            app:layout_constraintTop_toBottomOf="@id/iv_goals_tracker" />
+
+        <TextView
+            android:id="@+id/btn_more_goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="2dp"
+            android:background="@drawable/bg_rounded_corner_light_blue"
+            android:fontFamily="@font/inter_semi_bold"
+            android:text="@string/see_detail"
+            android:textSize="12sp"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toEndOf="@id/tv_goals_tracker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_goals_tracker"
+            app:layout_constraintBottom_toBottomOf="@id/tv_check_your_goals"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_goals_tracker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/tv_check_your_goals"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

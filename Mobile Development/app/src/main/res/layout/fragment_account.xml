@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="16dp"
+        android:background="@drawable/bg_top"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_account"
+            android:contentDescription="@string/user_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/iv_profile"
+            app:layout_constraintEnd_toStartOf="@id/ib_close"
+            app:layout_constraintTop_toTopOf="@id/iv_profile"
+            app:layout_constraintBottom_toBottomOf="@id/iv_profile"
+            tools:text="User"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/iv_profile"
+            app:layout_constraintEnd_toStartOf="@id/ib_close"
+            app:layout_constraintTop_toBottomOf="@id/tv_username"
+            tools:text="user@gmail.com"/>
+
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            android:src="@drawable/ic_close"
+            android:contentDescription="@string/back_to_previous_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_my_account"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_btn_white"
+        app:layout_constraintTop_toBottomOf="@id/profile_information">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:src="@drawable/ic_manage_accounts"
+            android:contentDescription="@string/my_account"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:text="@string/my_account"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_btn_white"
+        app:layout_constraintTop_toBottomOf="@id/btn_my_account">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:src="@drawable/ic_logout"
+            android:contentDescription="@string/logout"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:text="@string/logout"
+            android:textSize="16sp"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

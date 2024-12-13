@@ -1,0 +1,39 @@
+<resources>
+    <style name="Base.Theme.CashBox" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    
+    <style name="SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.CashBox</item>
+    </style>
+
+    <style name="CustomBottomNavTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="CustomFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="fabCustomSize">64dp</item>
+        <item name="backgroundTint">@color/light_blue</item>
+        <item name="srcCompat">@drawable/ic_add</item>
+        <item name="tint">@color/blue</item>
+        <item name="maxImageSize">40dp</item>
+    </style>
+
+    <style name="CustomSearchView" parent="Theme.Material3.Light">
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textColorPrimary">@color/light_grey</item>
+        <item name="android:textColorHint">@color/light_grey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CustomDatePickerDialog" parent="ThemeOverlay.Material3.Dialog">
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+</resources>
